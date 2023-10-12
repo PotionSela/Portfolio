@@ -1,0 +1,151 @@
+/* Root for colors */
+:root {
+    --pale-yellow: #f5d69e;
+    --maroon: #591777;
+    --light-maroon: #a05bc0;
+    --baby-blue: #5557d8;
+    --hover: #a4d1a0;
+    --pink: #e092dc;
+    --border-radius: 50px;
+  }
+
+  /* Body styling */
+body {
+    font-size: 16px;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    background-image: url('./Images/Background.jpg'); /* addded an image to the background */
+    background-size: cover;
+    background-position: center;
+    background-color: var(--hover); /* Fallback background color */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+/* Header styling */
+header {
+    text-align: right;
+    padding: 10px;
+    background-color: var(--maroon);
+    color: var(--pale-yellow);
+    
+}
+
+/* Navigation actions and display*/
+nav {
+    display: flex;
+    background-color: var(--baby-blue);
+}
+
+nav a {
+    color:var(--baby-blue);
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: var(--pink);
+    color: var(--pale-yellow);
+}
+/* End of Navigation */
+
+/* Main display styling*/
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    min-height: calc(100vh - 2 * 20px); /* This is to keep the footer at the bottom of the page*/
+}
+
+/* Footer styling*/
+footer {
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    background: var(--light-maroon);
+    color: var(--pale-yellow);
+    margin-top: 500px;
+  }
+
+/* Photo boxes */
+.photo {
+    border: 10px;
+    border-width: 1px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    flex: 1 0 200px;
+    margin: 20px;
+  }
+/* Photo headers */
+.photo h3 {
+    border-radius: 0 0;
+    padding: 20px;
+    margin: 5px;
+    background-color: var(--maroon);
+    color: var(--pale-yellow);
+}
+
+.photo h3:hover {
+    background-color: var(--light-maroon);
+    color: var(--pale-yellow);
+}
+
+/* Photo imgage attributes */
+.photo img {
+    width: 100%;
+}
+/* Links to the About Me, Resume, Projects and Wild Card*/
+.top-right-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-right-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.top-right-links a {
+    text-decoration: none;
+    color: var(--pale-yellow);
+}
+/* End of Nav Links */
+
+/* Biography Section */
+.Bio {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: var(--light-maroon); /* Added a color to the bakcground*/
+    color: var(--pale-yellow);
+}
+
+h5 {
+    padding-bottom: 20px;
+}
+
+.Bio p {
+    padding: 20px;
+    padding-left: 30px;
+    text-indent: 25px;
+}
+/* End of Biography Section*/
+
+/* Media screen shrinkage */
+@media screen and (max-width: 768px) {
+    main,
+    nav {
+        flex-direction: column;
+    
+  }
+}
