@@ -48,6 +48,7 @@ Gisela envisions a future in software development, particularly in UX/UI design.
 - Email: [giselamata27@gmail.com](mailto:giselamata27@gmail.com)
 - Phone: [+1 (309) 721-7709](tel:3097217709)
 - GitHub: [PotionSela's GitHub](https://github.com/PotionSela?tab=repositories)
+- Website: [PotionSela's Site](https://potionsela.github.io/Portfolio/)
 
 ---
 
